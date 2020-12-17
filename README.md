@@ -7,6 +7,7 @@ very seldom, this is indeed a good habit if you try to loose your weight or be h
 ### This app has two sections 
 One is a simple memo app using html and js that you can add what you ate. Second one is a search bar to find nutritional info about the food you had using api.
 
+![frame](./images/fp_layout.jpg)
 
 
 
