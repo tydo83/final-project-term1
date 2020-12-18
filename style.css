@@ -1,5 +1,6 @@
 body * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 .header {
@@ -13,47 +14,34 @@ body * {
 .app {
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
-.memo {
+.display{
+    width: 480px;
+    height: 320px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
+.memo, .search {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 5%;
 }
 
-.memo-1 {
-    width: 480px;
-    height: 320px;
-    margin-right: 10px;
-    border: 1px solid black;
-    
-}
-
-
-
-.memo-2 {
+.memo-2, .search-2 {
     display: flex;
     flex-direction: column;
     background-color: red;
 }
 
-.memo-2 * {
+.memo-2 *, .search-2 * {
     margin: 5%;
 }
 
-.search {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 50%;
-}
-
-.search-1 {
-    background-color: red;
-}
-
-form {
-    border: 1px solid black;
+.footer {
+    background-color: #f3ca40;
+    text-align: right;
+    padding: 30px;
 }
