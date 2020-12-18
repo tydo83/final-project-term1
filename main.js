@@ -12,12 +12,14 @@ memoBtn.addEventListener('click', () => {
 })
 
 removeBtn.addEventListener('click', () => {
-
+    
 })
 
 
 // search part
 const xhr = new XMLHttpRequest();
+const app_id = config.app_id;
+const app_key = config.app_key;
 
 xhr.addEventListener('loadend', () => {
     const data = JSON.parse(xhr.responseText);
@@ -35,8 +37,8 @@ searchBtn.addEventListener('click', () => {
     
     xhr.open("POST", "https://trackapi.nutritionix.com/v2/natural/nutrients");
     xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.setRequestHeader("x-app-id",  );
-    xhr.setRequestHeader("x-app-key", )
+    xhr.setRequestHeader("x-app-id", app_id);
+    xhr.setRequestHeader("x-app-key", app_key);
     xhr.send(userInput);
 })
 
