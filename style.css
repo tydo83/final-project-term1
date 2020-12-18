@@ -1,3 +1,59 @@
-* {
+body * {
     margin: 0;
+}
+
+.header {
+    padding: 3%;
+}
+
+.navbar {
+    background-color: #f3ca40;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.memo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+}
+
+.memo-1 {
+    width: 480px;
+    height: 320px;
+    margin-right: 10px;
+    border: 1px solid black;
+    
+}
+
+
+
+.memo-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+.memo-2 * {
+    margin: 5%;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50%;
+}
+
+.search-1 {
+    background-color: red;
+}
+
+form {
+    border: 1px solid black;
 }
