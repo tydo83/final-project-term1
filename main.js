@@ -32,13 +32,32 @@ const app_key = config.app_key;
 
 xhr.addEventListener('loadend', () => {
     const data = JSON.parse(xhr.responseText);
-    const output1 = document.querySelector('.photo');
-    const output2 = document.querySelector(".info1");
-    const output3 = document.querySelector(".info2")
     
-    output1.src = data.foods[0].photo.thumb;
-    output2.innerText = `calories: ${data.foods[0].nf_calories}`;
-    output3.innerText = `fat: ${data.foods[0].nf_total_fat}`;
+    const calories = document.querySelector(".calories");
+    const totalfat = document.querySelector(".totalfat")
+    const cholesterol = document.querySelector(".cholesterol")
+    const fiber = document.querySelector(".fiber")
+    const protein = document.querySelector(".protein")
+    const sFat = document.querySelector(".sFat")
+    const sodium = document.querySelector(".sodium")
+    const sugar = document.querySelector(".sugar")
+    const carbo = document.querySelector(".carbo")
+
+    
+    console.log(data.foods[0]);
+    
+    calories.innerText = `Calories: ${data.foods[0].nf_calories} kcal`;
+    totalfat.innerText = `Total fat: ${data.foods[0].nf_total_fat} g`;
+    cholesterol.innerText = `Cholesterol: ${data.foods[0].nf_cholesterol} mg`;
+    fiber.innerText = `Fiber: ${data.foods[0].nf_dietary_fiber} g`;
+    protein.innerText = `Protein: ${data.foods[0].nf_protein} g`;
+    sFat.innerText = `Saturated fat: ${data.foods[0].nf_saturated_fat} g`;
+    sodium.innerText = `Sodium: ${data.foods[0].nf_sodium} mg`;
+    sugar.innerText = `Sugar: ${data.foods[0].nf_sugars} g`;
+    carbo.innerText = `Carbohydrate: ${data.foods[0].nf_total_carbohydrate} g`;
+    
+
+    
 })
 
 const searchBtn = document.querySelector('.search-button')
