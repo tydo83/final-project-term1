@@ -3,8 +3,6 @@ body * {
     box-sizing: border-box;
 }
 
-
-
 .header {
     padding: 2%;
     color: whitesmoke;
@@ -39,7 +37,7 @@ body * {
     margin: 5%;
 } */
 
-.memo-bg {
+.memo-base {
     background-image: url("images/pablo-merchan-montes-Orz90t6o0e4-unsplash-1350x900.jpg");
     background-size: cover;
     display: flex;
@@ -55,22 +53,12 @@ body * {
     color: white;
 }
 
-
 .memo-1 {
-    width: 30%;
-    text-align: justify;
-    align-items: center;
-    opacity: 1;
-}
-
-
-.memo-2 {
     width: 30%;
     color: black;
 }
 
-
-.memo-3 {
+.memo-2 {
     color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -78,11 +66,16 @@ body * {
     align-items: center;
 }
 
-.memo-3 *{
+.memo-2 *{
     margin: 3px;
 }
 
 
+.memo-3 {
+    width: 30%;
+    text-align: justify;
+    align-items: center;
+}
 
 .search-base {
     /* background-image: url("images/test.jpg"); */
@@ -102,13 +95,10 @@ body * {
     background-repeat: no-repeat;
 }
 
-
-
 .search-1, .search-2, .search-3 {
     margin: 5%;
     color: white;
 }
-
 
 .search-1 {
     width: 30%;
@@ -118,12 +108,6 @@ body * {
 }
 
 .search-2 {
-    width: 30%;
-    color: black;
-    text-align: center;
-}
-
-.search-3 {
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -131,8 +115,13 @@ body * {
     text-align: center;
 }
 
-.search-3 *{
+.search-2 *{
     margin: 3px;
+}
+.search-3 {
+    width: 30%;
+    color: black;
+    text-align: center;
 }
 
 .footer {
@@ -140,7 +129,6 @@ body * {
     text-align: right;
     padding: 30px;
 }
-
 
 .input {
     width: 200px;
@@ -150,15 +138,13 @@ body * {
     width: 150px;
 }
 
-
-
 @media (max-width:700px) {
     .header, .navbar {
         display: flex;
         justify-content: center;
     }
 
-    .memo-bg {
+    .memo-base {
         display: flex;
         flex-direction: column;
         height: 50%;
@@ -171,7 +157,7 @@ body * {
         align-items: center;
     }
 
-    .search-1, .memo-1 {
+    .search-1, .memo-3 {
         width: 300px;
     }
 

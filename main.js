@@ -32,7 +32,6 @@ const app_key = config.app_key;
 
 xhr.addEventListener('loadend', () => {
     const data = JSON.parse(xhr.responseText);
-    
     const calories = document.querySelector(".calories");
     const totalfat = document.querySelector(".totalfat")
     const cholesterol = document.querySelector(".cholesterol")
@@ -43,9 +42,6 @@ xhr.addEventListener('loadend', () => {
     const sugar = document.querySelector(".sugar")
     const carbo = document.querySelector(".carbo")
 
-    
-    console.log(data.foods[0]);
-    
     calories.innerText = `Calories: ${data.foods[0].nf_calories} kcal`;
     totalfat.innerText = `Total fat: ${data.foods[0].nf_total_fat} g`;
     cholesterol.innerText = `Cholesterol: ${data.foods[0].nf_cholesterol} mg`;
@@ -55,9 +51,6 @@ xhr.addEventListener('loadend', () => {
     sodium.innerText = `Sodium: ${data.foods[0].nf_sodium} mg`;
     sugar.innerText = `Sugar: ${data.foods[0].nf_sugars} g`;
     carbo.innerText = `Carbohydrate: ${data.foods[0].nf_total_carbohydrate} g`;
-    
-
-    
 })
 
 const searchBtn = document.querySelector('.search-button')
