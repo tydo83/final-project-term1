@@ -145,6 +145,7 @@ body * {
         display: flex;
         justify-content: center;
     }
+
     .memo-bg {
         display: flex;
         flex-direction: column;
@@ -156,6 +157,15 @@ body * {
         flex-direction: column;
         height: 50%;
         align-items: center;
+    }
+
+    .search-1, .memo-1 {
+        width: 300px;
+    }
+
+    label {
+        width: 300px;
+        text-align: center;
     }
 
     .footer {
