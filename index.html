@@ -1,44 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What did you have?</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>WYH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div>
-    <section class="header text-uppercase"><h1>What did you have today?</h1></section>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.nutritionix.com/business/api">API</a></li>
-        </ul>
-    </nav>
-    <section class="app">
-        <section class="memo">
-            <section class="memo-1 display"><ul class="memo-item"></ul></section>
+        <section class="header text-uppercase">
+            <h1>wye</h1>
+            <p>you are what you eat</p>
+        </section>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.nutritionix.com/business/api"
+                    target="_blank">API</a></li>
+            </ul>
+        </nav>
+        <section class="app">
+            
+        <section class="memo-bg">
+            
+            <section class="memo-1 display">
+                <ul class="memo-item"></ul>
+            </section>
+                
             <section class="memo-2">
-                <label for="memo-input">Add foods you had today</label>
-                <input class="memo-input" type="text" name="memo-input">
-                <button type="button" class="add-btn btn btn-primary">add</button>
-                <button type="button" class="remove-btn btn btn-primary">remove</button>
-                <button type="clear" class="clear-btn btn btn-primary">clear</button>
+                    <label for="memo-input">
+                        <h5>Add foods you had today</h5>
+                    </label>
+                    <input class="memo-input" type="text" name="memo-input">
+                    <button type="button" class="add-btn btn btn-primary">add</button>
+                    <button type="button" class="remove-btn btn btn-primary">remove</button>
+                    <button type="clear" class="clear-btn btn btn-primary">clear</button>
             </section>
+            
+        
         </section>
-        <section class="search">
-            <section class="search-1 output display"><p></p></section>
-            <section class="search-2">
-                <label for="search-box">Find calories of what you had</label>
-                <input class="search-box" type="text">
-                <button type="button" class="search-button btn btn-primary">search</button>
+            
+            <hr>
+        <section class="search-base">
+            <section class="search-1">
+                <p>
+                    Estimates range from 1,600 to 2,400 calories per day for adult women 
+                    and 2,000 to 3,000 calories per day for adult men. Within each age and sex 
+                    category, the low end of the range is for sedentary individuals; the high
+                    end of the range is for active individuals.
+                </p>
             </section>
+
+            <section class="search-2 display">
+                <img class="photo"/>
+                <p class="info1"></p>
+                <p class="info2"></p>
+            </section>
+                
+            <section class="search-3">
+                    <label for="search-box">
+                        <h5>Find calories of foods you had</h5>
+                    </label>
+                    <input class="search-box" type="text">
+                    <button type="button" class="search-button btn btn-primary">search</button>
+            </section>
+        
         </section>
-    </section>
+
+    </section>    
     <section class="footer text-muted py-5">Hi, I am a footer</section>
     </div>
     <script src="./config.js"></script>
     <script src="./main.js"></script>
 </body>
+
 </html>

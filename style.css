@@ -4,11 +4,17 @@ body * {
 }
 
 .header {
-    padding: 3%;
+    padding: 2%;
+    color: black;
 }
 
+.header p {
+    margin-top: 5px;
+    padding-left: 5px;
+}
 .navbar {
-    background-color: #f3ca40;
+    background-color: #DFEEE7;
+    padding-left: 40px;
 }
 
 .app {
@@ -21,27 +27,93 @@ body * {
     height: 320px;
     margin-right: 10px;
     border: 1px solid black;
+    background-color: white;
 }
 
-.memo, .search {
+/* .memo, .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 5%;
+} */
+
+.memo-bg {
+    background-image: url("images/howcuttingdo.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 500px;
+}
+
+.memo-1 {
+    margin: 5%;
+}
+
+
+.memo-2 {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 10px;
+}
+
+
+
+.search-base {
+    background-image: url("images/imrs.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: white;
+}
+
+.search-1, .search-2, .search-3 {
     margin: 5%;
+}
+
+
+.search-1 {
+    width: 30%;
+    text-align: justify;
+}
+
+.search-2 {
+    width: 30%;
+    color: black;
+}
+
+.search-3 {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* .search-1 {
+    text-align: center;
 }
 
 .memo-2, .search-2 {
+    color: whitesmoke;
     display: flex;
     flex-direction: column;
-    background-color: red;
+    width: 200px;
 }
 
 .memo-2 *, .search-2 * {
-    margin: 5%;
-}
+    margin: 5%; 
+} */
+
 
 .footer {
-    background-color: #f3ca40;
+    background-color: #DFEEE7;
     text-align: right;
     padding: 30px;
 }

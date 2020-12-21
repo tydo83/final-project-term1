@@ -32,9 +32,13 @@ const app_key = config.app_key;
 
 xhr.addEventListener('loadend', () => {
     const data = JSON.parse(xhr.responseText);
-    const output = document.querySelector('.output');
-    console.log(data);
-    output.innerText = data.foods[0].nf_calories;
+    const output1 = document.querySelector('.photo');
+    const output2 = document.querySelector(".info1");
+    const output3 = document.querySelector(".info2")
+    
+    output1.src = data.foods[0].photo.thumb;
+    output2.innerText = `calories: ${data.foods[0].nf_calories}`;
+    output3.innerText = `fat: ${data.foods[0].nf_total_fat}`;
 })
 
 const searchBtn = document.querySelector('.search-button')
